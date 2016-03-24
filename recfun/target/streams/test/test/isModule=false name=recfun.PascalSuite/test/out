@@ -1,0 +1,40 @@
+[0m[[0minfo[0m] [0m[32mPascalSuite:[0m[0m
+[0m[[0minfo[0m] [0m[31m- pascal: col=0,row=2 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.Main$.pascal(Main.scala:17)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$1.apply$mcV$sp(PascalSuite.scala:12)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$1.apply(PascalSuite.scala:12)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$1.apply(PascalSuite.scala:12)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- pascal: col=1,row=2 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.Main$.pascal(Main.scala:17)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$2.apply$mcV$sp(PascalSuite.scala:16)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$2.apply(PascalSuite.scala:16)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$2.apply(PascalSuite.scala:16)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- pascal: col=1,row=3 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.Main$.pascal(Main.scala:17)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$3.apply$mcV$sp(PascalSuite.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$3.apply(PascalSuite.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at recfun.PascalSuite$$anonfun$3.apply(PascalSuite.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

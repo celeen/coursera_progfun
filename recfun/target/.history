@@ -1,0 +1,21 @@
+test
+test PAscalSuite
+test PascalSuite
+test PascalSuite.scala
+test
+test-only PascalSuite.scala
+test-only PascalSuite
+test
+PascalSuite
+PascalSuite.scala
+test-only org.recfun.test.PascalSuite
+test:run
+test-only
+test-only recfun.PascalSuite
+test-only recfun.BalancedSuite
+test-only recfun.BalanceSuite
+console
+test-only recfun.BalanceSuite
+console
+test-only recfun.BalanceSuite
+test-only recfun.CountChangeSuite
