@@ -1,5 +1,6 @@
 package patmat
 
+import cafesat.api.Formulas.False
 import common._
 
 /**
@@ -113,7 +114,10 @@ object Huffman {
   /**
    * Checks whether the list `trees` contains only one single code tree.
    */
-    def singleton(trees: List[CodeTree]): Boolean = ???
+  def singleton(trees: List[CodeTree]): Boolean = trees match {
+    case List() => false
+    case x :: xs => !singleton(xs)
+  }
   
   /**
    * The parameter `trees` of this function is a list of code trees ordered
