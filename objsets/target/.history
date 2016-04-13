@@ -1,1 +1,16 @@
 test
+sbt Main
+exit
+TweetSet.main
+TweetSet.main()
+import TweetSet._
+test
+scala TweetSet
+scalac TweetSet.scala
+objsets.main
+compile
+run
+exit
+console
+test
+exit

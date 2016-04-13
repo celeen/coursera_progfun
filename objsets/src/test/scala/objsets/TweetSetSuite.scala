@@ -9,10 +9,11 @@ import org.scalatest.junit.JUnitRunner
 class TweetSetSuite extends FunSuite {
   trait TestSets {
     val set1 = new Empty
-    val set2 = set1.incl(new Tweet("a", "a body", 20))
+    // I switched the text in set2's new tweet and d new tweet to make the tree more balanced so that testing drives more thorough solutions
+    val set2 = set1.incl(new Tweet("d", "d body", 9))
     val set3 = set2.incl(new Tweet("b", "b body", 20))
     val c = new Tweet("c", "c body", 7)
-    val d = new Tweet("d", "d body", 9)
+    val d = new Tweet("a", "a body", 20)
     val set4c = set3.incl(c)
     val set4d = set3.incl(d)
     val set5 = set4c.incl(d)
@@ -59,6 +60,33 @@ class TweetSetSuite extends FunSuite {
   test("union: with empty set (2)") {
     new TestSets {
       assert(size(set1.union(set5)) === 4)
+    }
+  }
+
+  test("mostRetweeted: set5") {
+    new TestSets {
+      assert(set5.mostRetweeted == d)
+    }
+  }
+
+  test("mostRetweeted: set4c") {
+    new TestSets {
+      assert(set4c.mostRetweeted.retweets == 20)
+    }
+  }
+
+  test("mostRetweeted: empty set") {
+    new TestSets {
+      intercept[NoSuchElementException] {
+        set1.mostRetweeted
+      }
+    }
+  }
+
+  test("mostRetweeted: tied for most retweeted returns first in the tree") {
+    new TestSets {
+      assert(set4d.mostRetweeted.retweets == 20)
+      assert(set4d.mostRetweeted.user == "a")
     }
   }
 
