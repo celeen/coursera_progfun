@@ -2,7 +2,7 @@
 [0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
 [0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 0 initial tasks for 0 tests.[0m
 [0m[[0mdebug[0m] [0mRunner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(patmat.HuffmanSuite, sbt.ForkMain$SubclassFingerscan@52a95fa3, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(patmat.HuffmanSuite, sbt.ForkMain$SubclassFingerscan@6dc5f0ba, false, [SuiteSelector])[0m
 [0m[[0minfo[0m] [0m[32mHuffmanSuite:[0m[0m
 [0m[[0minfo[0m] [0m[32m- weight of a larger tree[0m[0m
 [0m[[0minfo[0m] [0m[32m- chars of a larger tree[0m[0m
@@ -12,7 +12,7 @@
 [0m[[0minfo[0m] [0m[31m- combine of some leaf list *** FAILED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.combine(Huffman.scala:133)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.combine(Huffman.scala:130)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$6.apply$mcV$sp(HuffmanSuite.scala:49)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$6.apply(HuffmanSuite.scala:47)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$6.apply(HuffmanSuite.scala:47)[0m[0m
@@ -25,7 +25,7 @@
 [0m[[0minfo[0m] [0m[31m- decode and encode a very short text should be identity *** FAILED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encode(Huffman.scala:198)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encode(Huffman.scala:195)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$7$$anon$3.<init>(HuffmanSuite.scala:55)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$7.apply(HuffmanSuite.scala:54)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$7.apply(HuffmanSuite.scala:54)[0m[0m
@@ -38,7 +38,7 @@
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 7 events.[0m
 [0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
 [0m[[0minfo[0m] [0mScalaTest[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 600 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 601 milliseconds.[0m[0m
 [0m[[0minfo[0m] [0m[36mTotal number of tests run: 7[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0minfo[0m] [0m[36mTests: succeeded 5, failed 2, canceled 0, ignored 0, pending 0[0m[0m

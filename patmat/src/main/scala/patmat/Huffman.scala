@@ -77,21 +77,18 @@ object Huffman {
    *   }
    */
 
-
   def times(chars: List[Char]): List[(Char, Int)] = {
-    def timesAcc(lettersToCheck: List[Char], freqs: List[(Char, Int)]): List[(Char, Int)] = {
-      if (freqs.isEmpty) (lettersToCheck.head, 1) :: freqs
-      else freqs.head match {
-        case (char, int) =>
-          if (char == lettersToCheck.head) (char, int + 1) :: freqs.tail
-          else freqs.head :: timesAcc(lettersToCheck, freqs.tail)
-      }
+    def count(char: Char, freqs: List[(Char, Int)]): List[(Char, Int)] = freqs match {
+      case List() => List((char, 1))
+      case x :: xs =>
+        if (x._1 == char) (x._1, x._2 + 1) :: xs
+        else x :: count(char, xs)
     }
-
-    if (chars.isEmpty) List[(Char, Int)]()
-    else timesAcc(chars, times(chars.tail))
+    chars match {
+      case List() => List[(Char, Int)]()
+      case y :: ys => count(y, times(ys))
+    }
   }
-
 
   /**
    * Returns a list of `Leaf` nodes for a given frequency table `freqs`.
@@ -101,18 +98,18 @@ object Huffman {
    * of a leaf is the frequency of the character.
    */
   def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
-    def sort(freq: Leaf, newFreqs: List[Leaf]): List[Leaf] = {
-        if (newFreqs.isEmpty) freq :: List[Leaf]()
-        else newFreqs.head match {
-          case Leaf(leafChar, weight) =>
-            if (freq.weight < weight) freq :: newFreqs
-            else newFreqs.head :: sort(freq, newFreqs.tail)
-        }
+    def sort(freq: Leaf, newFreqs: List[Leaf]): List[Leaf] = newFreqs match {
+      case List() => List(freq)
+      case x :: xs =>
+        if (freq.weight < x.weight) freq :: newFreqs
+        else x :: sort(freq, newFreqs.tail)
     }
-    if (freqs.isEmpty) List[Leaf]()
-    else sort(Leaf(freqs.head._1, freqs.head._2), makeOrderedLeafList(freqs.tail))
+    freqs match {
+      case List() => List[Leaf]()
+      case y :: ys => sort(Leaf(y._1, y._2), makeOrderedLeafList(ys))
+    }
   }
-  
+
   /**
    * Checks whether the list `trees` contains only one single code tree.
    */
